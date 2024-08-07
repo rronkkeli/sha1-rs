@@ -196,8 +196,8 @@ impl SHA1 {
 
         // Process the message schedule
         for t in 0..80 {
-            let mut k: u32 = 0;
-            let mut f: u32 = 0;
+            let k: u32;
+            let f: u32;
             let w: u32 = words[t];
 
             match t / 20 {
