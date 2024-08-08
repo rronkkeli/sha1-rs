@@ -2,6 +2,10 @@ This is my implementation of SHA-1. This project's goal was to learn how Secure 
 
 Comparison hash for test.txt was generated with a tool shipped with 7-zip and for test strings a web tool was used.
 
+## Warning
+
+Do not use SHA-1 for authentication or to provide proof against tampering. It is not considered secure in that regard. Use SHA-2 or later instead. SHA-1 can be used for integrity checks for data that is transmitted or compressed but not for authenticity checks. In other words, do not use this in any application that needs security.
+
 ## Example usage
 
 Put lib.rs into a directory in your src. In this example the directory is named sha1.
